@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Pasumpon R B | Portfolio</title>
+
+  <!-- Connect CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Connect JavaScript -->
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="#hero" class="logo">Sri Pasumpon R B</a>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="hamburger" type="button" aria-label="Toggle menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <h1>Hi, I'm <span class="highlight">Sri Pasumpon R B</span></h1>
+        <p class="role">B.Sc. IT Student &amp; Aspiring Web Developer</p>
+        <p class="hero-desc">
+          I enjoy building websites, solving programming problems,
+          and learning new technologies.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn primary-btn">View My Projects</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="about-text">
+          I am pursuing my B.Sc. in Information Technology.
+          I am interested in software development, cloud computing,
+          and modern web technologies. I enjoy learning new skills
+          and building practical projects.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Frontend Web</h3>
+            <p>HTML, CSS, JavaScript</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <p>Java, C</p>
+          </article>
+
+          <article class="skill-card">
+            <h3>Cloud &amp; IoT</h3>
+            <p>Microsoft Azure, AWS, Internet of Things</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section">
+      <div class="container">
+        <h2>Certificates</h2>
+
+        <div class="certificates-grid">
+          <article class="cert-card">
+            <h3>Microsoft Azure Fundamentals</h3>
+            <p>Cloud computing and Azure fundamentals.</p>
+            <a href="https://coursera.org/"
+               target="_blank" rel="noopener noreferrer"
+               class="btn cert-btn">View Coursera</a>
+          </article>
+
+          <article class="cert-card">
+            <h3>AWS S3 Static Website Hosting</h3>
+            <p>Learning to host static websites using AWS S3.</p>
+            <a href="https://aws.amazon.com/s3/"
+               target="_blank" rel="noopener noreferrer"
+               class="btn cert-btn">Learn More</a>
+          </article>
+
+          <article class="cert-card">
+            <h3>Introduction to IoT</h3>
+            <p>Internet of Things and connected devices.</p>
+            <a href="https://www.coursera.org/"
+               target="_blank" rel="noopener noreferrer"
+               class="btn cert-btn">View Coursera</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section bg-light">
+      <div class="container">
+        <h2>Featured Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-img-placeholder">Project 1</div>
+            <h3>Student Management System</h3>
+            <p>A Java application to manage student records.</p>
+            <p><strong>Skills:</strong> Java, OOP</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-placeholder">Project 2</div>
+            <h3>Personal Portfolio</h3>
+            <p>A responsive website to showcase my skills.</p>
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-img-placeholder">Project 3</div>
+            <h3>Algorithm Visualizer</h3>
+            <p>A project demonstrating sorting and searching.</p>
+            <p><strong>Skills:</strong> C, Data Structures</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p class="contact-intro">Send me a message!</p>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required
+                   placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required
+                   placeholder="Enter your email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="4" required
+                      placeholder="Type your message"></textarea>
+          </div>
+
+          <button type="submit" class="btn form-submit">
+            Send Message
+          </button>
+
+          <p id="form-msg" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sri Pasumpon R B. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
